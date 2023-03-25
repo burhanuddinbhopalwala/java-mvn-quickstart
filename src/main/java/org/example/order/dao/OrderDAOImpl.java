@@ -1,6 +1,6 @@
 package org.example.order.dao;
 
-import com.bharath.order.dto.Order;
+import org.example.order.dto.Order;
 
 import java.sql.SQLException;
 

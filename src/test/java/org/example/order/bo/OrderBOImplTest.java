@@ -1,8 +1,8 @@
 package org.example.order.bo;
 
-import com.bharath.order.bo.exception.BOException;
-import com.bharath.order.dao.OrderDAOImpl;
-import com.bharath.order.dto.Order;
+import org.example.order.bo.exception.BOException;
+import org.example.order.dao.OrderDAOImpl;
+import org.example.order.dto.Order;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -12,8 +12,6 @@ import java.sql.SQLException;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.*;
 
 public class OrderBOImplTest {

@@ -1,7 +1,7 @@
 package org.example.order.bo;
 
-import com.bharath.order.bo.exception.BOException;
-import com.bharath.order.dto.Order;
+import org.example.order.bo.exception.BOException;
+import org.example.order.dto.Order;
 
 public interface OrderBO {
 
