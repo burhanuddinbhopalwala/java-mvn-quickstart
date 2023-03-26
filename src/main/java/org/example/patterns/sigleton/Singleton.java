@@ -48,3 +48,6 @@ public class Singleton implements Serializable, Cloneable {
     }
 
 }
+// Note: Use cases: Logger +
+// PropertyReader(PropertyFile) +
+// JDBC DataSource connection class for managing the connection pool!
