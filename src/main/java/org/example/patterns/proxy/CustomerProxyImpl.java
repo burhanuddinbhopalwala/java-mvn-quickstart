@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerProxyImpl implements Customer {
+    // has a CustomerImpl()
     Customer customerImpl = new CustomerImpl();
 
-    public Order createOrder(int id, String name, int quantity) {
+    private Order createOrder(int id, String name, int quantity) {
         Order order = new Order();
         order.setId(id);
         order.setProductName(name);
