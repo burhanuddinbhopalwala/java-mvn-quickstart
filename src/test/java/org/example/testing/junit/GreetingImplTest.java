@@ -1,5 +1,7 @@
-package org.example;
+package org.example.testing.junit;
 
+import org.example.testing.Greeting;
+import org.example.testing.GreetingImpl;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

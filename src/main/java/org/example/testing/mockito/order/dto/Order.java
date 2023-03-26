@@ -1,4 +1,4 @@
-package org.example.order.dto;
+package org.example.testing.mockito.order.dto;
 
 public class Order {
 

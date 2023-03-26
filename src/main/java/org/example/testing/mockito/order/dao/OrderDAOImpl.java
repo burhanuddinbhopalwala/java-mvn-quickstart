@@ -1,6 +1,6 @@
-package org.example.order.dao;
+package org.example.testing.mockito.order.dao;
 
-import org.example.order.dto.Order;
+import org.example.testing.mockito.order.dto.Order;
 
 import java.sql.SQLException;
 

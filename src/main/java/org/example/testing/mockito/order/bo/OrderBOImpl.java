@@ -1,8 +1,8 @@
-package org.example.order.bo;
+package org.example.testing.mockito.order.bo;
 
-import org.example.order.bo.exception.BOException;
-import org.example.order.dao.OrderDAO;
-import org.example.order.dto.Order;
+import org.example.testing.mockito.order.bo.exception.BOException;
+import org.example.testing.mockito.order.dao.OrderDAO;
+import org.example.testing.mockito.order.dto.Order;
 
 import java.sql.SQLException;
 

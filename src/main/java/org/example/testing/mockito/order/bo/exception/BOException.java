@@ -1,4 +1,4 @@
-package org.example.order.bo.exception;
+package org.example.testing.mockito.order.bo.exception;
 
 import java.sql.SQLException;
 

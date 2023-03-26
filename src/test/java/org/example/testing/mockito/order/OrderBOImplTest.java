@@ -1,8 +1,9 @@
-package org.example.order.bo;
+package org.example.testing.mockito.order;
 
-import org.example.order.bo.exception.BOException;
-import org.example.order.dao.OrderDAOImpl;
-import org.example.order.dto.Order;
+import org.example.testing.mockito.order.bo.OrderBOImpl;
+import org.example.testing.mockito.order.bo.exception.BOException;
+import org.example.testing.mockito.order.dao.OrderDAOImpl;
+import org.example.testing.mockito.order.dto.Order;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
