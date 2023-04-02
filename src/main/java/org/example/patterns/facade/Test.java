@@ -1,6 +1,6 @@
 package org.example.patterns.facade;
 
-import org.example.patterns.factory.PizzaStore;
+import org.example.patterns.gof.creational.factory.PizzaStore;
 
 public class Test {
 
