@@ -1,4 +1,4 @@
-package org.example.patterns.facade;
+package org.example.patterns.gof.structural.facade;
 
 import org.example.patterns.gof.creational.factory.PizzaStore;
 

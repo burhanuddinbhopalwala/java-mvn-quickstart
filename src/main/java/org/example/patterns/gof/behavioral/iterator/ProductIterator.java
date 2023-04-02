@@ -1,4 +1,4 @@
-package org.example.patterns.iterator;
+package org.example.patterns.gof.behavioral.iterator;
 
 public class ProductIterator implements Iterator {
     private final Product[] products;

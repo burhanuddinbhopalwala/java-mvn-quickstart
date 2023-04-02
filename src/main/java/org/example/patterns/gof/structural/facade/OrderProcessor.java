@@ -1,4 +1,4 @@
-package org.example.patterns.facade;
+package org.example.patterns.gof.structural.facade;
 
 public class OrderProcessor {
     public boolean checkStock(String name, int quantity) {

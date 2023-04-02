@@ -1,4 +1,4 @@
-package org.example.patterns.iterator;
+package org.example.patterns.gof.behavioral.iterator;
 
 public class Product {
     private String name;
