@@ -1,4 +1,4 @@
-package org.example.patterns.adapter;
+package org.example.patterns.gof.structural.adapter;
 
 public class WeatherUI {
     public static void main(String[] args) {
