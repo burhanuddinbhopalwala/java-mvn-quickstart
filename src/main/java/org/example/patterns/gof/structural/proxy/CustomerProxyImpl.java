@@ -1,4 +1,4 @@
-package org.example.patterns.proxy;
+package org.example.patterns.gof.structural.proxy;
 
 import java.util.ArrayList;
 import java.util.List;

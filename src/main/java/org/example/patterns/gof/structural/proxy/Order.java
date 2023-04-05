@@ -1,4 +1,4 @@
-package org.example.patterns.proxy;
+package org.example.patterns.gof.structural.proxy;
 
 public class Order {
     private int id;
