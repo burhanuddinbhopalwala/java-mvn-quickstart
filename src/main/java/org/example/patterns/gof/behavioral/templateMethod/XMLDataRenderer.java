@@ -1,4 +1,4 @@
-package org.example.patterns.templateMethod;
+package org.example.patterns.gof.behavioral.templateMethod;
 
 public class XMLDataRenderer extends DataRenderer {
     @Override
