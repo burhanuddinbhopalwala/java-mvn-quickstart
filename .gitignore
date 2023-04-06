@@ -1,18 +1,76 @@
-.idea/
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+# VSCode
+**/.vscode/**
+!**/.vscode/settings.json
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+.idea/modules
+.idea/*.xml
+.idea/*.iml
+.idea/*.ipr
+.idea/*.iws
+
+# Directories
+target/
+logs/
+build/
+dist/
+out/
+bin/
+temp/
+test-output/
+.vscode/
+.idea/
+node_modules/
+bower_components/
+
+# Files
+*.log
+*.log.*
+*.jks
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.Z
+*.dmg
+*.exe
+*.dll
+*.so
+*.dylib
+*.pdb
+*.lib
+*.class
+*.tmp
+*.DS_Store
+*.ipr
+*.iws
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+*.mysql
+*.sql
+*.properties
+*.pem
+*.key
+*.crt
+*.jks
+*.keystore
+*.truststore
+*.p12
+*.pkcs12
+*.iml
+*.orig
+*.rej
