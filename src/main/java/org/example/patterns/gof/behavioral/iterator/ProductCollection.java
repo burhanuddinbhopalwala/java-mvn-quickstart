@@ -4,7 +4,7 @@ public class ProductCollection implements Collection {
     private final Product[] products;
     private int count = 0;
 
-    public ProductCollection(Product[] products) {
+    public ProductCollection() {
         this.products = new Product[10];
     }
 

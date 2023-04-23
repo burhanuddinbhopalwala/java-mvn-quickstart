@@ -27,16 +27,24 @@
             <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
-        <!-- For JUnit 4 support >
-        <!- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- JUnit 5 Jupiter extension for running parameterized tests.-->
+        <!-- For JUnit 4 support -->
+        <!-- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine-->
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
             <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
-        <!-- For JUnit 5 Runner support - needed on eclipse >
-        <!- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <!-- For JUnit 5 Runner support - needed on Eclipse IDE-->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -51,7 +59,7 @@
             <scope>test</scope>
         </dependency>
         <!-- Above JUnit 5 is Modularized = Vintage + Platform runner support + Use of Java 8 (lambda expressions) -->
-        <!-- mvn install = compoile + run test + package (jar/war) + deploy -->
+        <!-- mvn install = compile + run test + package (jar/war) + deploy -->
         <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
         <!-- https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter -->
         <dependency>
@@ -108,3 +116,4 @@
         </pluginManagement>
     </build>
 </project>
+        <!-- System Under Test (SUT) is the code to write the unit tests for. -->

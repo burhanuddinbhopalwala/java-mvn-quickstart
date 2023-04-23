@@ -1,5 +1,6 @@
 package org.example.testing.mockito.order;
 
+import org.example.testing.mockito.order.bo.OrderBO;
 import org.example.testing.mockito.order.bo.OrderBOImpl;
 import org.example.testing.mockito.order.bo.exception.BOException;
 import org.example.testing.mockito.order.dao.OrderDAOImpl;
@@ -20,7 +21,7 @@ public class OrderBOImplTest {
     private static final int ORDER_ID = 123;
     @Mock
     OrderDAOImpl dao;
-    private OrderBOImpl bo;
+    private OrderBO bo;
 
     @Before
     public void setup() {
@@ -30,7 +31,7 @@ public class OrderBOImplTest {
     }
 
     @Test
-    public void placeOrder_Should_Create_An_Order() throws SQLException, BOException {
+    public void placeOrder_ShouldCreateAnOrder() throws SQLException, BOException {
 
         Order order = new Order();
         when(dao.create(any(Order.class))).thenReturn(new Integer(1));
@@ -42,7 +43,7 @@ public class OrderBOImplTest {
     }
 
     @Test
-    public void placeOrder_Should_not_Create_An_Order() throws SQLException, BOException {
+    public void placeOrder_ShouldNotCreateAnOrder() throws SQLException, BOException {
         Order order = new Order();
         // when(dao.create(order)).thenReturn(new Integer(0));
         boolean result = bo.placeOrder(order);
@@ -53,7 +54,7 @@ public class OrderBOImplTest {
     }
 
     @Test(expected = BOException.class)
-    public void placeOrder_Should_Throw_BOException() throws SQLException, BOException {
+    public void placeOrder_ShouldThrowBOException() throws SQLException, BOException {
         Order order = new Order();
         when(dao.create(any(Order.class))).thenThrow(SQLException.class);
         boolean result = bo.placeOrder(order);
@@ -61,7 +62,7 @@ public class OrderBOImplTest {
     }
 
     @Test
-    public void cancelOrder_Should_Cancel_The_Order() throws SQLException, BOException {
+    public void cancelOrder_ShouldCancelTheOrder() throws SQLException, BOException {
         Order order = new Order();
         when(dao.read(anyInt())).thenReturn(order);
         when(dao.update(order)).thenReturn(1);
@@ -105,12 +106,9 @@ public class OrderBOImplTest {
 
     @Test
     public void deleteOrder_Deletes_The_Order() throws SQLException, BOException {
-
         when(dao.delete(ORDER_ID)).thenReturn(1);
         boolean result = bo.deleteOrder(ORDER_ID);
         assertTrue(result);
         verify(dao).delete(ORDER_ID);
-
     }
-
 }

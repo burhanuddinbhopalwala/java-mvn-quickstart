@@ -1,6 +1,7 @@
 package org.example.testing.mockito.order.bo;
 
 import org.example.testing.mockito.order.bo.exception.BOException;
+import org.example.testing.mockito.order.dao.OrderDAO;
 import org.example.testing.mockito.order.dto.Order;
 
 public interface OrderBO {
@@ -11,4 +12,5 @@ public interface OrderBO {
 
     boolean deleteOrder(int id) throws BOException;
 
+    void setDao(OrderDAO dao);
 }
