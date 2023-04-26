@@ -7,6 +7,10 @@ public class CustomerProxyImpl implements Customer {
     // has a CustomerImpl()
     Customer customerImpl = new CustomerImpl();
 
+    public CustomerProxyImpl(Customer customerImpl) {
+        this.customerImpl = customerImpl;
+    }
+
     private Order createOrder(int id, String name, int quantity) {
         Order order = new Order();
         order.setId(id);
