@@ -162,3 +162,5 @@ public class OrderBOImplTest {
 
 // How to write the good unit tests: https://github.com/mockito/mockito/wiki/How-to-write-good-tests
 // Mockito: Mockito doesn't allow the dynamic stubbing of private, final and static methods.
+// Powermock Example: https://www.udemy.com/course/junitandmockitocrashcourse/learn/lecture/3622218#overview
+// Mock void methods: doNothing().when(daoMock).deleteById(123)
