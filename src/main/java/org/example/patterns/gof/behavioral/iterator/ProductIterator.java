@@ -2,7 +2,7 @@ package org.example.patterns.gof.behavioral.iterator;
 
 public class ProductIterator implements Iterator {
     private final Product[] products;
-    private int count;
+    private int count = 0;
 
     public ProductIterator(Product[] products) {
         this.products = products;
