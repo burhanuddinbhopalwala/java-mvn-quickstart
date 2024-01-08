@@ -4,11 +4,11 @@ import java.util.List;
 
 // The Repository pattern is a design pattern that provides an abstraction layer between the application
 // and the data storage system. It separates the data access logic from the business logic and provides a way
-// to retrieve and store data in a consistent and efficient way.
-// It also helps to improve the maintainability, testability, and scalability of the application.
+// to retrieve and store data consistently and efficiently.
+// It also helps improve the application's maintainability, testability, and scalability.
 
 // Interface for the repository
-interface UserRepository {
+interface JpaRepository {
     User getById(int id);
 
     List<User> getAll();
@@ -19,7 +19,7 @@ interface UserRepository {
 }
 
 // Concrete repository class that uses a database
-class DatabaseUserRepository implements UserRepository {
+class UserRepository implements JpaRepository {
     @Override
     public User getById(int id) {
         return null;
@@ -55,12 +55,12 @@ class User {
 public class Repository {
     public static void main(String[] args) {
         // Create repository instance
-        UserRepository userRepository = new DatabaseUserRepository();
+        JpaRepository jpaRepository = new UserRepository();
 
         // Use repository methods to interact with data
-        User user = userRepository.getById(1);
-        List<User> users = userRepository.getAll();
-        userRepository.save(new User(/* data */));
-        userRepository.delete(1);
+        User user = jpaRepository.getById(1);
+        List<User> users = jpaRepository.getAll();
+        jpaRepository.save(new User(/* data */));
+        jpaRepository.delete(1);
     }
 }
