@@ -26,7 +26,7 @@ public class Singleton implements Serializable, Cloneable {
 
     // Lazy initialization + sychronized for making this thread safe!
 //    public static synchronized Singleton getSingleton() {
-//        if (singleton == null) {
+//        if (singleton == null) { // As synchronized is steep process
 //            synchronized (Singleton.class) {
 //                if (singleton == null)
 //                    singleton = new Singleton();
