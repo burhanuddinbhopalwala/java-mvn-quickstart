@@ -62,5 +62,8 @@ public class Game implements Cloneable {
     // Game game = oldGame.clone();
 }
 
-// Pros: We can create as many clone as we want with same state.
-// Cons: Take care of Inheritance + Circular dependency handling;
+// Prototype >> instead of creating an object from scratch, an expensive operation
+// Spring frameworks support both singleton and prototype both, shallow and deep copy
+
+// Pros: We can create as many clones as we want with the same state
+// Cons: Take care of Inheritance + Circular dependency handling
