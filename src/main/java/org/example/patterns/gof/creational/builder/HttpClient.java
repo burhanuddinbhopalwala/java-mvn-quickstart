@@ -6,9 +6,9 @@ public class HttpClient {
     private final String body;
 
     public HttpClient(HttpClientBuilder httpClientBuilder) {
-        this.method = httpClientBuilder.method;
         this.url = httpClientBuilder.url;
         this.body = httpClientBuilder.body;
+        this.method = httpClientBuilder.method;
     }
 
     public String getMethod() {
@@ -19,11 +19,11 @@ public class HttpClient {
         return url;
     }
 
-    // Non readable + No setters required use builder pattern for the same.
+// Nonreadable + No setters required use builder pattern for the same.
 //    public HttpClient(String method, String url, String body) {
-//        this.method = method;
 //        this.url = url;
 //        this.body = body;
+//        this.method = method;
 //    }
 
     public String getBody() {
